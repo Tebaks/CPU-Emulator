@@ -17,3 +17,6 @@ Simple CPU Emulator using golang
 - MUL "number" : Multiply number and accumulator and store to accumulator.
 - MULM "memory": Multiply accumulator and memory and store to accumulator.
 - HALT: End of the program.
+
+## Test
+Test app that computes the sum of the numbers between 0 to 20
