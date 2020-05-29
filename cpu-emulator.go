@@ -12,7 +12,7 @@ import (
 type line struct {
 	lineNumber int
 	operation  string
-	value      int
+	value1     int
 }
 
 func main() {
@@ -40,11 +40,10 @@ func main() {
 		}
 		l.operation = tokenizer[1]
 		if len(tokenizer) > 2 {
-			l.value, err = strconv.Atoi(tokenizer[2])
+			l.value1, err = strconv.Atoi(tokenizer[2])
 			if err != nil {
 				log.Fatalf("value must be integer.")
 			}
-		}
 
 		program = append(program, l)
 	}
